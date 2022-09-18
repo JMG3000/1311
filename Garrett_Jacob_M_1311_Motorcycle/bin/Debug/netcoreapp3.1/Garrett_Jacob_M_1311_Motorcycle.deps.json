@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Garrett_Jacob_M_1311_Motorcycle/1.0.0": {
+        "runtime": {
+          "Garrett_Jacob_M_1311_Motorcycle.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Garrett_Jacob_M_1311_Motorcycle/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
