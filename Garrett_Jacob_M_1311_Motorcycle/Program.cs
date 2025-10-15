@@ -11,19 +11,21 @@ namespace Garrett_Jacob_M_1311_Motorcycle
             Moto1.BikeName = "Honda";
             Moto1.BikeYear = 2000;
             Moto1.MaxSpeed = 185;
-            DisplayBikeStats(Moto1);
-            //GetBikeInfo(Moto1);
-            //Motorcycle Moto2 = new Motorcycle();
-            //GetBikeInfo(Moto2);
-            //DisplayBikeStats(Moto1);
-            //DisplayBikeStats(Moto2);
+            Moto1.currentspeed = 0
+            Moto1.currentBikeWeight = 650; 
+
         }
+
+
+// Function to print motorcycle stats to the screen
         private static void DisplayBikeStats(Motorcycle Moto)
         {
             WriteLine("Motorcycle Name: {0}", Moto.BikeName);
             WriteLine("Motorcycle Name: {0}", Moto.BikeYear);
             WriteLine("Motorcycle Name: {0}", Moto.MaxSpeed);
         }
+
+// Function to get motorcycle stats from user input
         private static void GetBikeInfo(Motorcycle NewMoto)
         {
             WriteLine("Enter the make and/or model of bike >>");
@@ -33,6 +35,9 @@ namespace Garrett_Jacob_M_1311_Motorcycle
             WriteLine("Enter the max speed of the bike >>");
             NewMoto.MaxSpeed = Convert.ToInt32(ReadLine());
         }
+
+// Function to set the bikes speed to zero.
+// add parameter for bikes weight and add an algorithm to slow down the bike based on its speed and weight
         private static int StopBike(int currentspeed)
         {
             currentspeed = 0;
@@ -44,6 +49,11 @@ namespace Garrett_Jacob_M_1311_Motorcycle
             private string bikename;
             private int bikeyear;
             private int currentspeed;
+            private int currentBikeWeight;
+
+
+// add functions for increasing speed, decreasing speed, calculating acceleration 
+
             public int CurrentSpeed
             {
                 get
